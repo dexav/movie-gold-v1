@@ -8,6 +8,7 @@ import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
 import Reviews from "./components/reviews/Reviews";
+import Trailer from "./components/trailer/Trailer";
 
 function App() {
   const [movies, setMovies] = useState();
@@ -47,6 +48,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/Trailer/:ytTrailerId" element={<Trailer />}></Route>
           <Route path="/" element={<Home movies={movies} />}></Route>
           <Route
             path="/Reviews/:movieId"
