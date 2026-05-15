@@ -8,6 +8,9 @@
 .movie-poster > img {
   height: 100%;
   width: 100%;
+  border: 1px solid gold;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .movie-card-container {
   height: 550px;
@@ -27,4 +30,9 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+.movie-title {
+  color: white;
+  display: flex;
+  align-items: center;
 }
